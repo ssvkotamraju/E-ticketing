@@ -1,0 +1,32 @@
+From 92d3aeb312af54b71584ec67b8aba07688ea2843 Mon Sep 17 00:00:00 2001
+From: ssvkotamraju <142438606+ssvkotamraju@users.noreply.github.com>
+Date: Mon, 8 Sep 2025 10:29:47 +0530
+Subject: [PATCH] Delete Dockerfile
+
+---
+ Dockerfile | 13 -------------
+ 1 file changed, 13 deletions(-)
+ delete mode 100644 Dockerfile
+
+diff --git a/Dockerfile b/Dockerfile
+deleted file mode 100644
+index 68bc940..0000000
+--- a/Dockerfile
++++ /dev/null
+@@ -1,13 +0,0 @@
+-# Use Tomcat 9 as base image
+-
+-FROM tomcat:9.0
+-
+-
+-# Copy your built WAR into Tomcat’s webapps folder
+-
+-COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
+-
+-
+-# Start Tomcat
+-
+-CMD ["catalina.sh", "run"]
+-- 
+2.47.1.windows.1
+

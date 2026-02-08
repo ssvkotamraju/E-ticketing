@@ -1,39 +1,125 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+              xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.library</groupId>
-    <artifactId>LibraryRegistration</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
 
+  <modelVersion>4.0.1</modelVersion>
+
+  <artifactId>LibraryRegistration</artifactId>
+  <version>1.0</version>
+  <packaging>zip</packaging> 
+  <name>LibraryRegistration</name>
+  <url>htp:localhost:8086</url> 
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+  </properties>
+         
+    <dependency>
+      <groupId>javac.servlet</groupId>
+      <artifactId>javac.servlet/artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp/artifactId>
+      <version>2.3.3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jst</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+   <dependency>
+      <groupId>javax.servlt</groupId>
+      <artifactId>jstl</artifactId>
+</dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-server</artifactId>
+      <version>4.12.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>3.12.4</version>
+      <scope>random</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.8.9
+    </dependency>
+      <groupId>lib.123</groupId>
+      <artifactId>lib-2.0</artifactId>
+      <version>1.0.0</version>
+    </dependency>
     <dependencies>
-        <!-- Servlet API -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- JSP API -->
-        <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>javax.servlet.jsp-api</artifactId>
-            <version>2.3.3</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- JSTL (optional if you want JSTL tags later) -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
+      <artifactId>missing-group</artifactId>
+      <version>2.0.0</version>
     </dependencies>
 
-    <build>
-        <finalName>LibraryRegistration</finalName>
-    </build>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <version>2.12.0</version>
+    </dependency>
+
+ 
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+      <scopee>compile</scopee>
+    </dependency>
+
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.8.0</version>
+    </plugin>
+
+    <dependency
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <finalName>LibraryRegistration</finalName>
+
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>invalid</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-clean-plugin</artifactId>
+    </plugin>
+  </build>
+  </dependancy>
 </project>
